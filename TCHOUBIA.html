@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Standard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Groupe 10 TCHOUBIA DEMEKA DURACELL</h1>
-    </header>
-
+    <header class="d-flex flex-wrap align-items-center  justify-content-md-between py-3 mb-4 border-bottom"> 
+        <a href="/fr/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"> 
+         <svg class="bi me-2" width="40" height="32" role="img" aria-label="Amorcer">
+          <use xlink:href="#bootstrap"></use>
+         </svg> </a> 
+        <ul class="nav col-12 col-md-auto mb-2  mb-md-0"> 
+            <h1>Groupe 10 TCHOUBIA DEMEKA DURACELL</h1>
+        </ul> 
+       </header> 
     <main>
-        <div class="message">
-            <textarea placeholder="Bienvenue sur la page de TCHOUBIA DEMEKA DURACELL Groupe 10"></textarea>
-        </div>
+        <form> 
+            <h1 class="h3 mb-3 fw-normal">Veuillez vous connecter</h1> 
+            <div class="form-floating"> 
+             <input type="email" class="form-control" id="floatingInput" placeholder="nom@exemple.com"> 
+             <label for="floatingInput">Adresse e-mail</label> 
+            </div> 
+            <div class="form-floating"> 
+             <input type="password" class="form-control" id="floatingPassword" placeholder="Mot de passe"> 
+             <label for="floatingPassword">Mot de passe</label> 
+            </div> 
+            <div class="checkbox mb-3"> 
+             <label> <input type="checkbox" value="remember-me">Souviens-toi de moi</label> 
+            </div> 
+            <button class="w-100 btn btn-lg btn-primary" type="submit">S'identifier</button> 
+            <p class="mt-5 mb-3 text-muted">© 2017–2022</p> 
+           </form> 
     </main>
-
+    <button class="home-button" onclick="window.location.href='index.html';">Retour à l'accueil</button>
     <footer>
-        <button onclick="window.location.href='index.html'">Retour à l'accueil</button>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
 </html>
